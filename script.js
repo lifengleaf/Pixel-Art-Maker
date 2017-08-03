@@ -23,6 +23,7 @@ document.body.addEventListener("mousedown", function(event){
 document.body.addEventListener("mouseup", function(event){
     isMouseDown = false;
 })
+
 document.body.addEventListener("mousemove", function(event){
     
     if (event.target.className == "pixel" && isMouseDown)
@@ -31,5 +32,3 @@ document.body.addEventListener("mousemove", function(event){
         event.target.style.backgroundColor = colorPick.value;
         event.target.setAttribute("data-colored", "true");
 }})
-
-
